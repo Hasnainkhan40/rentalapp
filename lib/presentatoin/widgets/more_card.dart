@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rentalapp/data.model/car.dart';
+import 'package:rentalapp/data/models/car.dart';
 
 class MoreCard extends StatelessWidget {
   final Car car;

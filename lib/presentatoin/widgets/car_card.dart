@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rentalapp/data.model/car.dart';
+import 'package:rentalapp/data/models/car.dart';
 import 'package:rentalapp/presentatoin/pages/car_detail_screen.dart';
 
 class CarCard extends StatelessWidget {
@@ -27,7 +27,8 @@ class CarCard extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Image.asset('assets/car_image.png', height: 120),
+            Image.network(car.imageUrl),
+
             Text(
               car.model,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
